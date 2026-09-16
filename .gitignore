@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+vendor/
+
+# Build & Output
+dist/
+build/
+out/
+.next/
+*.log
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDEs & System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

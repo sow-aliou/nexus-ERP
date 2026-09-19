@@ -2,14 +2,26 @@
 
 Enterprise Resource Planning System (Nexus ERP).
 
-## About
+## Architecture
 
-Nexus ERP is a modular Enterprise Resource Planning platform.
+- **Backend**: Spring Boot 3.3 (Java 21) REST API (`/backend`)
+- **Frontend**: React (Vite) avec Nginx (`/frontend`)
+- **Orchestration**: Docker & Docker Compose
 
-## Getting Started
+## Lancement avec Docker Compose
 
-This repository is initialized and ready for development.
+Pour compiler et démarrer l'ensemble des conteneurs (Backend + Frontend) :
 
-### Git Setup
-- Branch: `main`
-- Remote: `git@github.com:sow-aliou/nexus-ERP.git`
+```bash
+docker compose up -d --build
+```
+
+### URLs d'accès
+- **Frontend (React)**: [http://localhost:3001](http://localhost:3001)
+- **Backend API (Spring Boot)**: [http://localhost:8080/api/health](http://localhost:8080/api/health)
+
+## Arrêter les conteneurs
+
+```bash
+docker compose down
+```
